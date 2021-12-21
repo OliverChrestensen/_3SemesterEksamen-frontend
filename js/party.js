@@ -22,8 +22,9 @@ function partyCandidateData(data){
     //colDiv
     let candidateColDiv = document.createElement('div');
     candidateColDiv.classList.add('col-md-4');
+    let br = document.createElement("br")
     candidateRow.append(candidateColDiv);
-
+    candidateColDiv.append(br)
     //cardDiv
     let candidateCardDiv = document.createElement('div');
     candidateCardDiv.classList.add('card', 'p-3');
@@ -58,7 +59,7 @@ function partyCandidateData(data){
 
     //update
     const updateButton = document.createElement('button')
-    updateButton.classList.add('profile-edit-btn', 'btn', 'btn-primary', 'updateButtonProject');
+    updateButton.classList.add('profile-edit-btn', 'btn', 'btn-info', 'updateButtonProject');
     updateButton.type = 'button'
     updateButton.innerText = 'Save'
     candidateBtnDiv.append(updateButton)
